@@ -32,5 +32,25 @@ namespace Lab_3
         {
             myButton.Content = "Clicked";
         }
+
+        private void btAjoutEmploye_Click(object sender, RoutedEventArgs e)
+        {
+            mainFrame.Navigate(typeof(AjouterEmploye));
+        }
+
+        private void btAjoutProjet_Click(object sender, RoutedEventArgs e)
+        {
+            mainFrame.Navigate(typeof(AjouterProjet));
+        }
+
+        private void btRechercheEmploye_Click(object sender, RoutedEventArgs e)
+        {
+            mainFrame.Navigate(typeof(RechercherEmploye));
+        }
+
+        private void btAfficherListeProjets_Click(object sender, RoutedEventArgs e)
+        {
+            mainFrame.Navigate(typeof(AffichageListeProjet));
+        }
     }
 }
