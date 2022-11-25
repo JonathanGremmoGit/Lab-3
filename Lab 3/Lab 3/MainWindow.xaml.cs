@@ -26,11 +26,7 @@ namespace Lab_3
         public MainWindow()
         {
             this.InitializeComponent();
-        }
-
-        private void myButton_Click(object sender, RoutedEventArgs e)
-        {
-            myButton.Content = "Clicked";
+            mainFrame.Navigate(typeof(AffichageListeProjet));
         }
 
         private void btAjoutEmploye_Click(object sender, RoutedEventArgs e)

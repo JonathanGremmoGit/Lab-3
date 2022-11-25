@@ -27,5 +27,10 @@ namespace Lab_3
         {
             this.InitializeComponent();
         }
+
+        private void btAjouterProjet_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

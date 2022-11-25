@@ -5,6 +5,7 @@ using Microsoft.UI.Xaml.Data;
 using Microsoft.UI.Xaml.Input;
 using Microsoft.UI.Xaml.Media;
 using Microsoft.UI.Xaml.Navigation;
+using Microsoft.UI.Xaml.Shapes;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -26,6 +27,34 @@ namespace Lab_3
         public AjouterEmploye()
         {
             this.InitializeComponent();
+        }
+
+        private void btAjouterEmploye_Click(object sender, RoutedEventArgs e)
+        {
+            if (matricule.Text == "")
+            {
+                matriculeErreur.Text = "Entrez un matricule";
+            }
+            else matriculeErreur.Text = "";
+
+            if (nom.Text == "")
+            {
+                nomErreur.Text = "Entrez le nom de l'employé";
+            }
+            else nomErreur.Text = "";
+
+            if (prenom.Text == "")
+            {
+                prenomErreur.Text = "Entrez le prénom de l'employé";
+            }
+            else prenomErreur.Text = "";
+
+            if (matricule.Text != "" && nom.Text != "" && prenom.Text != "")
+            {
+                this.Frame.Navigate(typeof(AffichageListeProjet));
+            }
+
+
         }
     }
 }

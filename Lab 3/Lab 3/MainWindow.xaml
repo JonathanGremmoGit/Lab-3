@@ -7,19 +7,27 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid>
+    <ScrollViewer>
 
-        <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top">
-            <Button x:Name="myButton" Click="myButton_Click">ok</Button>
-            <Button x:Name="btAjoutEmploye" Click="btAjoutEmploye_Click">Ajouter un employé</Button>
-            <Button x:Name="btAjoutProjet" Click="btAjoutProjet_Click">Ajouter un projet</Button>
-            <Button x:Name="btRechercheEmploye" Click="btRechercheEmploye_Click">Rechercher un employé</Button>
-            <Button x:Name="btAfficherListeProjets" Click="btAfficherListeProjets_Click">Afficher la liste de projets</Button>
+        <Grid>
 
-        <Frame Name="mainFrame"></Frame>
+        <StackPanel Orientation="Vertical" >
 
-    </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button x:Name="btAjoutEmploye" Click="btAjoutEmploye_Click">Ajouter un employé</Button>
+                <Button x:Name="btAjoutProjet" Click="btAjoutProjet_Click">Ajouter un projet</Button>
+                <Button x:Name="btRechercheEmploye" Click="btRechercheEmploye_Click">Rechercher un employé</Button>
+                <Button x:Name="btAfficherListeProjets" Click="btAfficherListeProjets_Click">Afficher la liste de projets</Button>
+            </StackPanel>
+            
+             <Frame Name="mainFrame" />
 
-    </Grid>
+        </StackPanel>
+
+       
+
+        </Grid>
+
+    </ScrollViewer>
 
 </Window>
