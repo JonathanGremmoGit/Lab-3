@@ -7,8 +7,20 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-        <Button x:Name="myButton" Click="myButton_Click">ok</Button>
+    <Grid>
+
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Button x:Name="myButton" Click="myButton_Click">ok</Button>
+            <Button x:Name="btAjoutEmploye" Click="btAjoutEmploye_Click">Ajouter un employé</Button>
+            <Button x:Name="btAjoutProjet" Click="btAjoutProjet_Click">Ajouter un projet</Button>
+            <Button x:Name="btRechercheEmploye" Click="btRechercheEmploye_Click">Rechercher un employé</Button>
+            <Button x:Name="btAfficherListeProjets" Click="btAfficherListeProjets_Click">Afficher la liste de projets</Button>
+
+        <Frame Name="mainFrame"></Frame>
+
     </StackPanel>
+
+    </Grid>
+
 </Window>
   
