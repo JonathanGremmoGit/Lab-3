@@ -5,6 +5,7 @@ using Microsoft.UI.Xaml.Data;
 using Microsoft.UI.Xaml.Input;
 using Microsoft.UI.Xaml.Media;
 using Microsoft.UI.Xaml.Navigation;
+using Microsoft.UI.Xaml.Shapes;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -78,6 +79,8 @@ namespace Lab_3
 
             if (numero.Text != "" && dateDebut.SelectedDate != null && budgetInt >= 10000 && budgetInt <= 100000 && description.Text != "" && employe.Text != "")
             {
+                laDate = dateDebut.Date.Date.ToString("yyyy/MM/dd");
+                AffichageListeProjet.liste1.Add(new Projet(numero.Text, laDate, budgetInt, description.Text, employe.Text));
                 this.Frame.Navigate(typeof(AffichageListeProjet));
             }
         }

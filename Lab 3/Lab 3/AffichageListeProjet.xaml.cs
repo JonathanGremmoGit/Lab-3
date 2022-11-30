@@ -28,13 +28,14 @@ namespace Lab_3
 
         internal static ObservableCollection<Projet> liste1 = new ObservableCollection<Projet>()
         {
-            new Projet(1, "yyyy/MM/dd", 60000, "Description 1", "1A2B3C4D")
+            new Projet("1", "yyyy/MM/dd", 60000, "Description 1", "1A2B3C4D")
         };
 
 
         public AffichageListeProjet()
         {
             this.InitializeComponent();
+            lvListe.ItemsSource = liste1;
         }
     }
 }

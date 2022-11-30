@@ -8,7 +8,7 @@ namespace Lab_3
 {
     class Projet
     {
-        int numero;
+        string numero;
         string dateDebut;
         int budget;
         string description;
@@ -16,14 +16,14 @@ namespace Lab_3
 
         public Projet()
         {
-            this.numero = 1;
+            this.numero = "1";
             this.dateDebut = "a";
             this.budget = 50001;
             this.description = "d";
             this.matriculeEmploye = "m";
         }
 
-        public Projet(int numero, string dateDebut, int budget, string description, string matriculeEmploye)
+        public Projet(string numero, string dateDebut, int budget, string description, string matriculeEmploye)
         {
             this.numero = numero;
             this.dateDebut = dateDebut;
@@ -32,7 +32,7 @@ namespace Lab_3
             this.matriculeEmploye = matriculeEmploye;
         }
 
-        public int Numero { get => numero; set => numero = value; }
+        public string Numero { get => numero; set => numero = value; }
         public string DateDebut { get => dateDebut; set => dateDebut = value; }
         public int Budget { get => budget; set => budget = value; }
         public string Description { get => description; set => description = value; }

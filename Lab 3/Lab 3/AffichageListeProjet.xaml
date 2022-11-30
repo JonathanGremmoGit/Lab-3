@@ -8,7 +8,30 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <ScrollViewer Background="Bisque">
 
-    </Grid>
+        <Grid>
+
+            <TextBlock Text="Liste des projets" FontSize="50" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,30,0,0"/>
+            
+            <ListView x:Name="lvListe" SelectedItem="objet">
+                <ListView.ItemTemplate>
+                    <DataTemplate x:DataType="local:Projet">
+                        <StackPanel Orientation="Horizontal" Margin="10" HorizontalAlignment="Stretch">
+                            <StackPanel Margin="20">
+                                <TextBlock Text="{x:Bind Numero}" Margin="5,5,5,10" FontSize="25" FontWeight="Bold"/>
+                                <TextBlock Text="{x:Bind DateDebut}" Margin="5,5,5,10"/>
+                                <TextBlock Text="{x:Bind Budget}" Margin="5,5,5,10"/>
+                                <TextBlock Text="{x:Bind Description}" Margin="5,5,5,10"/>
+                                <TextBlock Text="{x:Bind MatriculeEmploye}" Margin="5,5,5,10"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </Grid>
+
+    </ScrollViewer>
+
 </Page>
