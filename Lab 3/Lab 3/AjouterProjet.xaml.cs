@@ -36,6 +36,12 @@ namespace Lab_3
             }
             else numeroErreur.Text = "";
 
+            if (dateDebut.SelectedDate == null)
+            {
+                dateDebutErreur.Text = "Entrez une date";
+            }
+            else dateDebutErreur.Text = "";
+
             if (budget.Text == "")
             {
                 budgetErreur.Text = "Entrez un budget";
@@ -54,7 +60,7 @@ namespace Lab_3
             }
             else employeErreur.Text = "";
 
-            if (numero.Text != "" && budget.Text != "" && description.Text != "" && employe.Text != "")
+            if (numero.Text != "" && dateDebut.SelectedDate != null && budget.Text != "" && description.Text != "" && employe.Text != "")
             {
                 this.Frame.Navigate(typeof(AffichageListeProjet));
             }

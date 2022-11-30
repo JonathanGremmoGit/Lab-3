@@ -27,5 +27,14 @@ namespace Lab_3
         {
             this.InitializeComponent();
         }
+
+        private void boutonRechercherEmploye_Click(object sender, RoutedEventArgs e)
+        {
+            if (rechercheEmploye.Text == "")
+            {
+                rechercheEmployeErreur.Text = "Entrez le prénom de l'employé";
+            }
+            else rechercheEmployeErreur.Text = "";
+        }
     }
 }

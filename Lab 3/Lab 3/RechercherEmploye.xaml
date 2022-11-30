@@ -10,5 +10,17 @@
 
     <Grid>
 
+        <StackPanel>
+
+            <TextBlock Text="Recherche d'un employé" FontSize="50" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,30,0,0"/>
+
+            <TextBox x:Name="rechercheEmploye" Width="500" Height="40" FontSize="15" HorizontalAlignment="Center" Margin="0,50,0,0" BorderBrush="Green" BorderThickness="5" />
+            <TextBlock x:Name="rechercheEmployeErreur" Text="" FontSize="20" HorizontalAlignment="Center"/>
+            
+
+            <Button x:Name="boutonRechercherEmploye" Click="boutonRechercherEmploye_Click" Content="Rechercher" Width="250" FontSize="40" HorizontalAlignment="Center" Margin="0, 50, 0, 25" BorderBrush="Green" BorderThickness="3"/>
+            
+        </StackPanel>
+
     </Grid>
 </Page>
