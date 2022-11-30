@@ -30,7 +30,34 @@ namespace Lab_3
 
         private void btAjouterProjet_Click(object sender, RoutedEventArgs e)
         {
+            if (numero.Text == "")
+            {
+                numeroErreur.Text = "Entrez un numéro";
+            }
+            else numeroErreur.Text = "";
 
+            if (budget.Text == "")
+            {
+                budgetErreur.Text = "Entrez un budget";
+            }
+            else budgetErreur.Text = "";
+
+            if (description.Text == "")
+            {
+                descriptionErreur.Text = "Entrez une description";
+            }
+            else descriptionErreur.Text = "";
+
+            if (employe.Text == "")
+            {
+                employeErreur.Text = "Entrez le matricule de l'employé que vous voulez assigner au projet";
+            }
+            else employeErreur.Text = "";
+
+            if (numero.Text != "" && budget.Text != "" && description.Text != "" && employe.Text != "")
+            {
+                this.Frame.Navigate(typeof(AffichageListeProjet));
+            }
         }
     }
 }
