@@ -30,5 +30,16 @@ namespace Lab_3
 
             return gestionBD;
         }
+
+        public ObservableCollection<Projet> GetProjets()
+        {
+            return liste1;
+        }
+
+        public ObservableCollection<Employe> GetEmployes()
+        {
+            return liste2;
+        }
+
     }
 }

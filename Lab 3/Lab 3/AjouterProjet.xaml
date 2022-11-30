@@ -41,8 +41,8 @@
 
                 <TextBlock Text="Budget" Grid.Row="5" FontSize="30" Margin="50, 20, 0, 0"/>
 
-            <TextBox x:Name="budget" Grid.Row="6" Width="500" Height="40" FontSize="15" HorizontalAlignment="Left" Margin="50, 10, 0, 0" BorderBrush="Red" BorderThickness="4"/>
-            <TextBlock x:Name="budgetErreur" Text="" FontSize="20" Margin="50, 0, 0, 0"/>
+                <TextBox x:Name="budget" Grid.Row="6" Width="500" Height="40" FontSize="15" HorizontalAlignment="Left" Margin="50, 10, 0, 0" BorderBrush="Red" BorderThickness="4"/>
+                <TextBlock x:Name="budgetErreur" Text="" FontSize="20" Margin="50, 0, 0, 0"/>
 
             <TextBlock Text="Description" Grid.Row="7" FontSize="30" Margin="50, 20, 0, 0"/>
 

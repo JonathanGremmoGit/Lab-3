@@ -5,8 +5,10 @@ using Microsoft.UI.Xaml.Data;
 using Microsoft.UI.Xaml.Input;
 using Microsoft.UI.Xaml.Media;
 using Microsoft.UI.Xaml.Navigation;
+using Microsoft.UI.Xaml.Shapes;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -23,6 +25,13 @@ namespace Lab_3
     /// </summary>
     public sealed partial class AffichageListeProjet : Page
     {
+
+        internal static ObservableCollection<Projet> liste1 = new ObservableCollection<Projet>()
+        {
+            new Projet(1, "yyyy/MM/dd", 60000, "Description 1", "1A2B3C4D")
+        };
+
+
         public AffichageListeProjet()
         {
             this.InitializeComponent();
